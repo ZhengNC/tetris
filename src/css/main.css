@@ -1,0 +1,157 @@
+
+.nav{
+  width: 201px;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.tip{
+  width: 201px;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.score{
+  color: red;
+}
+
+.container{
+  width: 201px;
+  height: 401px;
+  margin: 0 auto;
+  background-color: #cccccc;
+  opacity: 0.5;
+}
+
+.table{
+  border-collapse:collapse;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  border-right: 1px solid rgba(0,0,0,0.3);
+}
+
+table td{
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.box{
+  margin: 0 0;
+  width: 19px;
+  height: 19px;
+  border-top: 1px solid rgba(0,0,0,0.3);
+  border-left: 1px solid rgba(0,0,0,0.3);
+}
+
+.isBox{
+  background-color: red;
+}
+
+.isMoveBox{
+  background-color: red;
+  opacity: 0.5;
+}
+
+.userDiv{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 30px;
+}
+.userDiv span,input{
+  line-height: 20px;
+}
+.userDiv input{
+  width: 120px;
+}
+
+
+
+
+
+.tableWhite{
+  border-collapse:collapse;
+  background-color: white;
+  border-bottom: 1px solid rgba(0,0,0,0);
+  border-right: 1px solid rgba(0,0,0,0);
+}
+
+.boxWhite{
+  margin: 0 0;
+  width: 19px;
+  height: 19px;
+  border: none;
+}
+
+.love{
+  margin: 0 auto;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: palevioletred;
+}
+.love:before,
+.love:after{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  content: '';
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: palevioletred;
+}
+.love:before{
+  bottombottom: 0px;
+  left: -4.5px;
+}
+.love:after{
+  top: -4.5px;
+  rightright: 0px;
+}
+
+
+.content{
+  margin: 0 auto;
+  width: 361px;
+}
+
+.controllerButton{
+  height: 40px;
+  width: 40px;
+  background-color: darksalmon;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 30%;
+}
+.leftButtonGroup{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 240px;
+  float: left;
+}
+.rightButtonGroup{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 240px;
+  float: right;
+}
+.centerGroup{
+  width: 201px;
+}
+
+
+.content .centerGroup,.leftButtonGroup,.rightButtonGroup{
+  display: inline-block;
+}

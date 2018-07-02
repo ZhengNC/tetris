@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>俄罗斯方块</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="nav">
+    <h3>俄罗斯方块</h3>
+    <button id="startGame" class="button">开始游戏</button>
+    <span id="score" class="score"></span>
+    <br/>
+    <div class="userDiv">
+      <span>用户：</span><input id="userName" type="text" placeholder="请输入用户名" value="chao"/>
+    </div>
+  </div>
+  <div class="content">
+    <div class="centerGroup">
+      <div class="container">
+        <table id="panel" class="table">
+          <tr id="line0">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr id="line1">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr id="line2">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr id="line3">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr id="line4">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr id="line5">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr id="line6">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr id="line7">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr id="line8">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr id="line9">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr id="line10">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr id="line11">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr id="line12">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr id="line13">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr id="line14">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr id="line15">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr id="line16">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr id="line17">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr id="line18">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr id="line19">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="leftButtonGroup">
+      <div id="leftButton" class="controllerButton">左</div>
+      <div id="upButton" class="controllerButton">转</div>
+    </div>
+    <div class="rightButtonGroup">
+      <div id="rightButton" class="controllerButton">右</div>
+      <div id="downButton" class="controllerButton">下</div>
+    </div>
+  </div>
+  <div class="tip">
+    <pre>
+    提示：“←”向左移动
+          “→”向右移动
+          “↓”向下移动
+          “↑”旋转
+          “←┘”开始游戏
+    </pre>
+  </div>
+</body>
+<script src="js/jquery.mobile-1.4.5.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/main.js"></script>
+<script src="js/controller.js"></script>
+
+
+<script>
+  // $("td").click(function () {
+  //   if($(this).hasClass("isBox")){
+  //     $(this).removeClass("isBox");
+  //   }else{
+  //     $(this).addClass("isBox");
+  //   }
+  //   clearLine();
+  // });
+</script>
+
+</html>
