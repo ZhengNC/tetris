@@ -488,16 +488,12 @@ $(document).keydown(function(event){
     startGame();
   }
   if(tetrisBox != null){
-    if(event.keyCode == 32){
-      console.log('你按下了 空格');
-      goDown();
-    }
     if(event.keyCode == 38){
       console.log('你按下了 上');
       tetrisBox.rotate();
     }
-    if(event.keyCode == 40 || event.keyCode == 98){
-      console.log('你按下了 下');
+    if(event.keyCode == 98){
+      console.log('你按下了 2');
       tetrisBox.down();
     }
     if(event.keyCode == 37 || event.keyCode == 97){
@@ -516,11 +512,27 @@ $(document).keydown(function(event){
 });
 
 /**
- * 直接下落到底部
+ * 监听空格键和方向下键按下
  */
-function goDown() {
-
-}
+$(document).keydown(function(event){
+    if(tetrisBox != null){
+        if(event.keyCode == 32 || event.keyCode == 40){
+            window.clearInterval(time);
+            time = window.setInterval(timeDown, 25);
+        }
+    }
+});
+/**
+ * 监听空格键和方向下键松开
+ */
+$(document).keyup(function(event){
+    if(tetrisBox != null){
+        if(event.keyCode == 32 || event.keyCode == 40){
+            window.clearInterval(time);
+            time = window.setInterval(timeDown, level);
+        }
+    }
+});
 
 
 
